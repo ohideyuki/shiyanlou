@@ -31,4 +31,8 @@ class UserData(object):
     def _read_users_data(self):
         userdata=[]
         with open(argv.userfilepath) as userfile:
-        
+            for item in userfile.readlines():
+                item = item.strip()
+                item = item.split(',')
+                userdata.append(tuple(item))
+           
