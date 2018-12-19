@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+import sys
+import csv
+class Argv:
+    try:
+    def __init__(self):
+        argvs = sys.argv[1:]    
+        self.configfilepath = argvs[argvs.index('-c')+1]
+        self.userfilepath = argvs[argvs.index('-d')+1]
+        self.gongzifilepath = argvs[argvs.index('-o')+1]
+     except:
+        print("Please check if the file path is correct or not")
+argv = Argv()
+
+class Config:
+    def __init__(self):
+        self.config = self._read_config()
+
+    def _read_config(self):
+        config = {}
+        with open(argv.configfilepath) as configfile:
+            for item in configfile.readlines():
+                item = item.strip()
+                item = item.split('=')
+                config[item[0]]=item[1]
+
+class UserData(object):
+
+    def __init__(self):
+        self.userdata = self._read_users_data()
+    def _read_users_data(self):
+        userdata=[]
+        with open(argv.userfilepath) as userfile:
+        
