@@ -1,0 +1,21 @@
+In [38]: def cal_power(i,m=2):
+    ...:        return i**m
+    ...: 
+
+In [39]: cal_power(2,4)
+Out[39]: 16
+
+In [40]: cal_power(2)
+Out[40]: 4
+
+In [41]: from functools import partial
+
+In [42]: cal_power4 = partial(cal_power,m=4)
+
+In [43]: cal_power4(3)
+Out[44]: 81
+
+In [45]: cal_power4(3,m=2)
+Out[46]: 9
+
+In [47]: 
