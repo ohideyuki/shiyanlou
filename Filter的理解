@@ -1,0 +1,26 @@
+#格式为 filter(a,b)
+
+#定义一个列表
+NBA=[('Leborn James', 98), ('Kevin Durant', 97), ('James Harden', 96), ('Stephen Curry', 95), ('Anthony Davis', 94)]
+
+#定义一个判断函数
+def a(x)：
+  if x[1] >= 96: #当能力值大于等于96的时候返回真
+    return Trun
+
+#运行代码
+list(filrter(a,pp))
+
+#Result
+>>> list(filter(a,NBA))
+[('Leborn James', 98), ('Kevin Durant', 97), ('James Harden', 96)]
+>>> 
+
+
+#filter函数是已经有一个遍历的功能在了，函数a判断的第一个对象其实是b中的第一个元组。
+#无需在a函数里写for循环了
+#错误代码：
+def a(x):
+    for x in NBA:
+       if x[1] >= 96:
+           return Trun
