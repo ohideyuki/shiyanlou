@@ -1,0 +1,24 @@
+In [12]: NBA = [('Leborn James', 98), ('Kevin Durant', 97), ('James Harden', 96), ('Stephen
+    ...:  Curry', 95), ('Anthony Davis', 94)]
+
+In [13]: NBA
+Out[13]: 
+[('Leborn James', 98),
+ ('Kevin Durant', 97),
+ ('James Harden', 96),
+ ('Stephen Curry', 95),
+ ('Anthony Davis', 94)]
+
+In [14]: def name(n):
+    ...:     return n[0].lower()
+    ...: 
+
+In [15]: list(map(name,NBA))
+Out[15]: 
+['leborn james',
+ 'kevin durant',
+ 'james harden',
+ 'stephen curry',
+ 'anthony davis']
+
+In [16]: 
