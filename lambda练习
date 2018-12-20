@@ -1,0 +1,7 @@
+sorted(list(map(lambda x: x[0].upper(),NBA)),reverse=True)
+ 
+['STEPHEN CURRY',
+ 'LEBORN JAMES',
+ 'KEVIN DURANT',
+ 'JAMES HARDEN',
+ 'ANTHONY DAVIS']
