@@ -1,0 +1,36 @@
+In [1]: b = [1,-2,3,-4,-5,6,7,8,-9]
+
+In [2]: b
+Out[2]: [1, -2, 3, -4, -5, 6, 7, 8, -9]
+
+In [3]: def a(x,y):
+   ...:     return x + y
+   ...: 
+
+In [4]: a
+Out[4]: <function __main__.a>
+
+In [5]: from functools import reduce
+
+In [6]: reduce(a,b)
+Out[6]: 5
+
+In [7]: sum(b)
+Out[7]: 5
+
+In [8]: b
+Out[8]: [1, -2, 3, -4, -5, 6, 7, 8, -9]
+
+In [9]: def a(x):
+   ...:     if x > 0:
+   ...:         return x
+   ...:     
+
+In [10]: reduce(a,b)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-10-9362e05bd041> in <module>()
+
+TypeError: a() takes 1 positional argument but 2 were given
+
+#对于定义的reduce中的函数，必须要有两个参数。
