@@ -21,7 +21,7 @@ list(filrter(a,pp))
 #filter函数是已经有一个遍历的功能在了，函数a判断的第一个对象其实是b中的第一个元组。
 #无需在a函数里写for循环了
 #错误代码：
-def a(x):
-    for x in NBA:
-       if x[1] >= 96:
-           return Trun
+#def a(x):
+#    for x in NBA:
+#       if x[1] >= 96:
+#           return Trun
